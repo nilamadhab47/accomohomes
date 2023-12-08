@@ -41,7 +41,7 @@ const Stays = () => {
         Available Stays
       </h1>
 
-      <div className="flex flex-col md:flex-row items-center justify-evenly gap-7 mb-14">
+      <div className="flex flex-col lg:flex-row items-center justify-evenly gap-7 mb-14">
         {/* #todo: add right and left buttons to scroll cards 
 correct the image path and display multiple image scroll below the images        
         */}
