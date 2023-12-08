@@ -51,9 +51,9 @@ const Navbar = () => {
             Request a Call
           </Button>
         </ul>
-          <Button className="text-[#000341] bg-white rounded-none font-bold block lg:hidden">
-            Request a Call
-          </Button>
+        <Button className="text-[#000341] bg-white rounded-none font-bold block lg:hidden">
+          Request a Call
+        </Button>
       </nav>
     </>
   );

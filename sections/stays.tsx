@@ -1,10 +1,11 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { MapPin } from "lucide-react";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
+import { stay } from "./images";
 
 type TCard = {
-  image: string;
+  image: StaticImageData;
   name: string;
   address: string;
   price: string;
@@ -14,21 +15,21 @@ type TCard = {
 const Stays = () => {
   const cards: TCard[] = [
     {
-      image: "/",
+      image: stay,
       name: "Houser 28 Galleria",
       address: "asdf",
       price: "39,999",
       roomType: "Solo Room",
     },
     {
-      image: "/",
+      image: stay,
       name: "Houser 28 Galleria",
       address: "asdf",
       price: "39,999",
       roomType: "Solo Room",
     },
     {
-      image: "/",
+      image: stay,
       name: "Houser 28 Galleria",
       address: "asdf",
       price: "39,999",
@@ -42,16 +43,13 @@ const Stays = () => {
       </h1>
 
       <div className="flex flex-col lg:flex-row items-center justify-evenly gap-7 mb-14">
-        {/* #todo: add right and left buttons to scroll cards 
-correct the image path and display multiple image scroll below the images        
-        */}
-        {cards.map((card) => (
-          <Card className="rounded-2xl">
+        {cards.map((card, i) => (
+          <Card className="rounded-2xl" key={i}>
             <CardHeader>
               <CardTitle>
                 <Image
                   className="rounded-lg"
-                  src="/next.svg"
+                  src={card.image}
                   alt="stay_image"
                   width={316}
                   height={206}
@@ -83,7 +81,7 @@ correct the image path and display multiple image scroll below the images
                   </div>
                 </div>
               </div>
-              <Button className="bg-[#000341] w-full mt-10 mb-16 flex flex-row justify-between items-center mx-0 px-2">
+              <Button className="bg-[#000341] w-full mt-10 mb-14 flex flex-row justify-between items-center mx-0 px-2">
                 <span>{card.roomType}</span>
                 <span className="font-thin">
                   starting at{" "}

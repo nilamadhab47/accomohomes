@@ -39,7 +39,7 @@ const Ammenities = () => {
       Don’t worry, we’ve got you
       covered with 24/7 power
       backup*`,
-      title: "test",
+      title: "24/7 Backup",
     },
     {
       icon: help,
@@ -48,7 +48,7 @@ const Ammenities = () => {
     are here to take care of regular
     cleaning and maintenance
     needs.`,
-      title: "test",
+      title: "Regular Cleaning & Maintenance",
     },
     {
       icon: wifi,
@@ -58,7 +58,7 @@ const Ammenities = () => {
     internet connection for hassle-
     free video calls and
     presentations.`,
-      title: "test",
+      title: "High Speed Internet",
     },
     {
       icon: wash,
@@ -66,7 +66,7 @@ const Ammenities = () => {
     on-site laundry facilities.
     Access the washing machine
     at any time of the day.`,
-      title: "test",
+      title: "On-Site Laundry",
     },
     {
       icon: community,
@@ -75,7 +75,7 @@ const Ammenities = () => {
     ‘Settl.’ community to bond with
     your neighbours over coffee,
     games and more`,
-      title: "test",
+      title: "Settl. Community",
     },
     {
       icon: note,
@@ -84,7 +84,7 @@ const Ammenities = () => {
     nominal charges cover all your
     expenses from electricity**,
     water to wifi bills.`,
-      title: "test",
+      title: "All inclusive rent with nominal deposit",
     },
     {
       icon: security,
@@ -92,16 +92,17 @@ const Ammenities = () => {
     responsibility. Your safety is
     covered by 24/7 tech-enabled
     security.`,
-      title: "test",
+      title: "Tech-enabled 24/7 security",
     },
   ];
   return (
     <div className="w-full flex flex-col items-center justify-center bg-[#000341] text-white p-10 py-12">
-      <div className="m-10 flex flex-col items-start justify-evenly gap-3">
+      <div className="m-10 flex flex-col items-start justify-evenly gap-3 max-w-[1164px]">
         <h1 className="text-2xl font-bold px-2 mb-2">At your convenience</h1>
         <div className="flex flex-col lg:flex-row flex-wrap gap-5">
-          {ammenities.map((ammenitie) => (
-            <Card className="rounded-md text-center flex flex-col justify-center items-center py-6 px-3 w-[272.469px] h-[312.904px] shrink-0">
+          {/* #todo: card styling is offbeat */}
+          {ammenities.map((ammenitie,i) => (
+            <Card key={i} className="rounded-md text-center flex flex-col justify-center items-center py-6 px-3 w-[272.469px] h-[312.904px] shrink-0">
               <CardHeader className="mt-1 pt-0 flex flex-col items-center justify-center w-[40%]">
                 <CardTitle className="flex flex-col items-center justify-center gap-3">
                   <Image
@@ -110,7 +111,7 @@ const Ammenities = () => {
                     height={20}
                     width={40}
                   />
-                  <h1>{ammenitie.title}</h1>
+                  <h4>{ammenitie.title}</h4>
                 </CardTitle>
               </CardHeader>
               <CardDescription className="w-[80%]">{ammenitie.desc}</CardDescription>

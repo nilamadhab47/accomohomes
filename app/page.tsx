@@ -1,4 +1,4 @@
-import { Navbar, Stays } from "@/sections";
+import { Community, Navbar, Stays } from "@/sections";
 import Ammenities from "@/sections/ammenities";
 
 export default function Home() {
@@ -7,6 +7,7 @@ export default function Home() {
       <Navbar />
       <Stays />
       <Ammenities/>
+      <Community/>
     </main>
   );
 }
