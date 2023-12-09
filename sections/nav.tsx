@@ -41,7 +41,7 @@ const Navbar = () => {
           <span className="font-extrabold">ACOMO</span>{" "}
           <i className="font-light">homes</i>
         </h1>
-        <ul className="flex flex-row justify-between items-center w-[50%]">
+        <ul className="lg:flex lg:flex-row lg:justify-between lg:items-center w-[50%] hidden">
           {navItems.map((item) => (
             <li key={item.title} className="font-medium text-sm">
               {item.title}
@@ -51,6 +51,9 @@ const Navbar = () => {
             Request a Call
           </Button>
         </ul>
+        <Button className="text-[#000341] bg-white rounded-none font-bold block lg:hidden">
+          Request a Call
+        </Button>
       </nav>
     </>
   );
