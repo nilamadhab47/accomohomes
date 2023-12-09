@@ -111,7 +111,7 @@ const Ammenities = () => {
                     height={20}
                     width={40}
                   />
-                  <h4>{ammenitie.title}</h4>
+                  <p>{ammenitie.title}</p>
                 </CardTitle>
               </CardHeader>
               <CardDescription className="w-[80%]">{ammenitie.desc}</CardDescription>
