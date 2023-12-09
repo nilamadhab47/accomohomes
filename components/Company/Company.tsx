@@ -19,7 +19,7 @@ const Images =
 
 const Company = () => {
   return (
-    <div className=' flex justify-around items-center p-[46px['>
+    <div className=' flex justify-around items-center p-[46px]'>
         {Images.map((img,key)=> (
             <Image 
             src={img.src}
