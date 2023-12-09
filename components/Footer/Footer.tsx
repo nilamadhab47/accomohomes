@@ -7,7 +7,7 @@ import { BsTwitterX } from "react-icons/bs";
 
 const Footer = () => {
   return (
-    <div className=" bg-[#000341] px-20 py-24 flex justify-around items-baseline text-white">
+    <div className=" bg-[#000341] md:px-20 px-4 py-24 flex flex-col md:flex-row justify-around items-baseline text-white">
       <div className=" flex flex-col gap-40  w-[40%]">
         <div className=" ">
         <h1 className=" text-3xl mb-4 ">ACCOMO<span className=" italic font-light">Homes</span></h1>
@@ -24,7 +24,7 @@ const Footer = () => {
         </div>
         
       </div>
-      <div className=" flex justify-between items-baseline w-[60%]">
+      <div className=" flex flex-col md:flex-row gap-12 justify-between items-baseline w-[60%]">
             <div>
                 <h6 className=" font-bold mb-7 text-xl">Rent</h6>
                 <div className="list">
