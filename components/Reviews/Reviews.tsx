@@ -15,9 +15,9 @@ const reviewData = [
 ];
 const Reviews = () => {
   return (
-    <div className=" max-w-[1400px] mx-auto my-0 px-28 py-16">
+    <div className=" max-w-[1400px] mx-auto my-0 md:px-28 px-4 py-16">
       <div>
-        <h2 className=" flex gap-8 mb-16">
+        <h2 className=" flex md:flex-row flex-col gap-8 mb-16">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="39"
@@ -42,9 +42,9 @@ const Reviews = () => {
           {"     "} <span className=" text-[28px] font-bold">What Homies you have to say</span>
         </h2>
       </div>
-      <div className=" flex gap-16">
+      <div className=" flex flex-col md:flex-row gap-16">
         {reviewData.map((rev, key)=> (
-            <div key={key} style={{border:"1px solid black", boxShadow:"12px 12px 2px 1px rgb(0 0 0)"}} className="bg-[#E5e7ff] flex items-center p-8 gap-3">
+            <div key={key} style={{border:"1px solid black", boxShadow:"12px 12px 2px 1px rgb(0 0 0)"}} className="bg-[#E5e7ff] flex items-center md:p-8 p-4 gap-3">
                 <Image
                 src={"/images/intersect.png"}
                 alt="as" 

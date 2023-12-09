@@ -6,7 +6,7 @@ const Community = () => {
   const images: StaticImageData[] = [pic1, pic2, pic3, pic4];
   return (
     <div className="w-full bg-[#E5E7FF] flex flex-col justify-evenly gap-5 items-start pb-16">
-      <section className="max-w-[1164px] mx-8 mt-8 px-16 py-12">
+      <section className="max-w-[1164px] mx-8 mt-8 md:px-16 px-0  py-12">
         <h1 className="font-extrabold font-[Poppins] text-3xl text-black">
           Community
         </h1>
